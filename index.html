@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Temperature Converter</h1> 
+   <form >
+
+    <section class="input__container">
+        <select name="temp_diff" id="temp_diff" >
+            <option>Select </option>
+            <option value="cel">Celcius</option>
+            <option value="fah">Fahrenheit</option>
+            <option value="kel">Kelvin</option>
+        </select>
+        <input type="number" name="temp" id="temp" > 
+        <button onclick="calculateTemp()" name="temp" type="button" class="convert">Convert</button>
+    </section>
+
+    <section class="result__container">
+            <label for="cel">Celcius :</label>
+            <button id="cel" class="btn"></button>
+            <label for="fah">Fahrenheit :</label>
+            <button id="fah" class="btn"></button>
+            <label for="kel">Kelvin :</label>
+            <button id="kel" class="btn"></button>
+    </section>
+    
+  </form>
+
+   <script src="main.js"></script>
+</body>
+</html>
